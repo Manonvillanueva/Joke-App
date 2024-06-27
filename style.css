@@ -1,0 +1,59 @@
+@font-face {
+  font-family: retroSignature;
+  src: url(./font/RetroSignature.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: #fedb26;
+  color: rgb(241, 241, 241);
+}
+.app {
+  padding: 20px 40px;
+  width: 80%;
+  max-width: 800px;
+  background: #e10079;
+  border-radius: 14px;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.307);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.app:hover {
+  transform: scale(1.01);
+}
+
+.app p {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.absolute {
+  position: absolute;
+  padding-bottom: 40px;
+  bottom: 0;
+  color: #e10079;
+  font-family: retroSignature, verdana;
+  font-size: 50px;
+}
+
+/* *****************MEDIA QUERIES************** */
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .absolute {
+    font-size: 45px;
+  }
+}
